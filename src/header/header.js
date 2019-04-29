@@ -11,7 +11,7 @@ export default class Header extends LitElement {
         width: 100%;
         top: 0;
         left: 0;
-        background: linear-gradient(90deg, #2196f3, #673ab7);
+        background: linear-gradient(90deg, #00bcd4, #673ab7);
         text-align: center;
       }
       header::after {
