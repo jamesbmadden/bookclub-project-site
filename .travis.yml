@@ -3,6 +3,7 @@ node_js:
   - 8
 deploy:
   provider: pages
+  github_token: $GITHUB_PAT
   skip_cleanup: true
 before_install:
   - npm i -g npm
