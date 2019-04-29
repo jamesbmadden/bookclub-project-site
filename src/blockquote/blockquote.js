@@ -23,6 +23,8 @@ export default class Blockquote extends LitElement {
       }
       blockquote {
         padding-top: 1rem;
+        font-size: 2rem;
+        font-weight: 900;
       }
       .dash {
         display: inline-block;
