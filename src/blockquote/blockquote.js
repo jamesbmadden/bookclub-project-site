@@ -16,6 +16,7 @@ export default class Blockquote extends LitElement {
         display: inline-block;
         width: 50%;
         color: white;
+        font-size: 1.25rem;
       }
       .decoration {
         color: #555;
