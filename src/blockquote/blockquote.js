@@ -24,6 +24,11 @@ export default class Blockquote extends LitElement {
       blockquote {
         padding-top: 1rem;
       }
+      .dash {
+        display: inline-block;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+      }
     `;
   }
 
@@ -34,7 +39,7 @@ export default class Blockquote extends LitElement {
         <blockquote>
           <slot></slot>
         </blockquote>
-        -<cite>${this.credit}</cite>
+        <span class="dash">-</span><cite>${this.credit}</cite>
       </div>
     `;
   }
