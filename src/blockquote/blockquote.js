@@ -11,6 +11,7 @@ export default class Blockquote extends LitElement {
         display: inline-block;
       }
       .container {
+        text-align: left;
         position: relative;
         display: inline-block;
         width: 50%;
