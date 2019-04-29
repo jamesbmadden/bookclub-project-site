@@ -7,6 +7,9 @@ export default class Blockquote extends LitElement {
 
   static get styles () {
     return css`
+      :host {
+        display: inline-block;
+      }
       .container {
         position: relative;
         display: inline-block;
