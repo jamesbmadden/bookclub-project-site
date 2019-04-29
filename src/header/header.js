@@ -35,8 +35,15 @@ export default class Header extends LitElement {
         color: white;
       }
       .julia {
+        position: relative;
         display: inline-block;
         height: 100%;
+        width: 100%;
+        background-image: url('./img/julia.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
       }
     `;
   }
@@ -44,7 +51,7 @@ export default class Header extends LitElement {
   render () {
     return html`
       <header>
-        <img src="./img/julia.png" class="julia" />
+        <div class="julia"></div>
         <h1>I am Not<br>
         Your Perfect<br>
         Mexican Daughter</h1>
