@@ -4,7 +4,7 @@ import { LitElement, html, customElement, property, css } from 'https://unpkg.co
 export default class Block extends LitElement {
 
   @property({ type: Number })
-  fraction = 2;
+  width = 50;
 
   static get styles () {
     return css`
@@ -19,7 +19,7 @@ export default class Block extends LitElement {
     return html`
       <style>
         :host {
-          width: calc(100% / ${this.fraction});
+          width: ${this.width}%;
         }
       </style>
       <slot></slot>
