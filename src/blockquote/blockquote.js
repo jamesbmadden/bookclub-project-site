@@ -1,4 +1,5 @@
 import { LitElement, html, customElement, property, css } from 'https://unpkg.com/lit-element@2.1.0/lit-element.js?module';
+import '../block/block.js';
 
 @customElement('bc-blockquote')
 export default class Blockquote extends LitElement {
@@ -10,11 +11,8 @@ export default class Blockquote extends LitElement {
       :host {
         display: inline-block;
       }
-      .container {
+      bc-block {
         text-align: left;
-        position: relative;
-        display: inline-block;
-        width: 50%;
         color: white;
         font-size: 1.25rem;
       }
@@ -41,13 +39,13 @@ export default class Blockquote extends LitElement {
 
   render () {
     return html`
-      <div class="container">
+      <bc-block width="50">
         <span class="decoration">“</span>
         <blockquote>
           <slot></slot>
         </blockquote>
         <span class="dash">-</span><cite>${this.credit}</cite>
-      </div>
+      </bc-block>
     `;
   }
 
