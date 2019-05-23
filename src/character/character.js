@@ -27,6 +27,9 @@ export default class Character extends LitElement {
         padding-left: 1rem;
         padding-bottom: 1rem;
       }
+      p {
+        text-align: justify;
+      }
     `;
   }
 
