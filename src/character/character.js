@@ -28,6 +28,8 @@ export default class Character extends LitElement {
         padding-bottom: 1rem;
       }
       p {
+        box-sizing: border-box;
+        padding: 1rem;
         text-align: justify;
       }
     `;
