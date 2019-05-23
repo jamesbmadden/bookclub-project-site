@@ -10,6 +10,7 @@ export default class Character extends LitElement {
     return css`
       :host {
         display: inline-block;
+        width: 50%;
       }
       bc-block {
         text-align: left;
@@ -17,9 +18,9 @@ export default class Character extends LitElement {
         font-size: 1.25rem;
       }
       h2 {
-        padding-top: 1rem;
         font-size: 2rem;
         font-weight: 900;
+        text-align: center;
       }
       .dash {
         display: inline-block;
@@ -31,7 +32,7 @@ export default class Character extends LitElement {
 
   render () {
     return html`
-      <bc-block width="50">
+      <bc-block width="100">
         <h2>${this.character}</h2>
         <p><slot></slot></p>
       </bc-block>
