@@ -66,7 +66,7 @@ export default class Header extends LitElement {
   connectedCallback () {
     super.connectedCallback();
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 511) {
+      if (window.scrollY > 489) {
         this.shadowRoot.querySelector('.scroll-header').classList.add('show');
       } else {
         this.shadowRoot.querySelector('.scroll-header').classList.remove('show');
