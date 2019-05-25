@@ -52,6 +52,7 @@ export default class Character extends LitElement {
       }
       :host(:only-child) h2::after {
         margin: auto;
+        margin-top: 0.5rem;
       }
     `;
   }
