@@ -20,7 +20,17 @@ export default class Character extends LitElement {
       h2 {
         font-size: 2rem;
         font-weight: 900;
-        text-align: center;
+        padding-left: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+      h2::after {
+        content: "";
+        position: relative;
+        display: block;
+        width: 32px;
+        height: 4px;
+        background-color: white;
+        margin-top: 0.5rem;
       }
       .dash {
         display: inline-block;
@@ -28,8 +38,10 @@ export default class Character extends LitElement {
         padding-bottom: 1rem;
       }
       p {
+        margin-top: 0;
         box-sizing: border-box;
         padding: 1rem;
+        padding-top: 0;
         text-align: justify;
       }
     `;
