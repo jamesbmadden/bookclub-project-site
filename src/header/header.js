@@ -46,6 +46,7 @@ export default class Header extends LitElement {
         background-attachment: fixed;
       }
       .scroll-header {
+        white-space: nowrap;
         color: white;
         background: linear-gradient(90deg, #006064, #311b92);
         z-index: 2;
