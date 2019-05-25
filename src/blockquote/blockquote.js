@@ -10,6 +10,7 @@ export default class Blockquote extends LitElement {
     return css`
       :host {
         display: inline-block;
+        max-width: 512px;
       }
       bc-block {
         text-align: left;
@@ -28,6 +29,7 @@ export default class Blockquote extends LitElement {
         padding-top: 1rem;
         font-size: 2rem;
         font-weight: 900;
+        text-align: justify;
       }
       .dash {
         display: inline-block;
@@ -39,7 +41,7 @@ export default class Blockquote extends LitElement {
 
   render () {
     return html`
-      <bc-block width="50">
+      <bc-block width="100">
         <span class="decoration">“</span>
         <blockquote>
           <slot></slot>
