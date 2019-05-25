@@ -12,9 +12,6 @@ export default class Character extends LitElement {
         display: inline-block;
         width: 100%;
       }
-      :host[single] {
-        max-width: 512px;
-      }
       bc-block {
         text-align: left;
         color: white;
@@ -46,6 +43,15 @@ export default class Character extends LitElement {
         padding: 1rem;
         padding-top: 0;
         text-align: justify;
+      }
+      :host(:only-child) {
+        max-width: 512px;
+      }
+      :host(:only-child) h2 {
+        text-align: center;
+      }
+      :host(:only-child) h2::after {
+        margin: auto;
       }
     `;
   }
