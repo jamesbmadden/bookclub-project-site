@@ -45,7 +45,33 @@ export default class Header extends LitElement {
         background-repeat: no-repeat;
         background-attachment: fixed;
       }
+      .scroll-header {
+        color: white;
+        background: linear-gradient(90deg, #006064, #311b92);
+        z-index: 2;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4rem;
+        transform: translateY(-100%);
+        transition: transform 0.4s;
+      }
+      .scroll-header.show {
+        transform: translateY(0);
+      }
     `;
+  }
+
+  connectedCallback () {
+    super.connectedCallback();
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 511) {
+        this.shadowRoot.querySelector('.scroll-header').classList.add('show');
+      } else {
+        this.shadowRoot.querySelector('.scroll-header').classList.remove('show');
+      }
+    });
   }
 
   render () {
@@ -56,6 +82,9 @@ export default class Header extends LitElement {
         Your Perfect<br>
         Mexican Daughter</h1>
       </header>
+      <div class="scroll-header">
+        <h1>I am Not Your Perfect Mexican Daughter</h1>
+      </div>
     `;
   }
 
