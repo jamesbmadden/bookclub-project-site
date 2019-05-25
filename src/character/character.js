@@ -12,7 +12,7 @@ export default class Character extends LitElement {
         display: inline-block;
         width: 100%;
       }
-      :host:only-of-type {
+      :host[single] {
         max-width: 512px;
       }
       bc-block {
