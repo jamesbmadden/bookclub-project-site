@@ -54,8 +54,12 @@ export default class Header extends LitElement {
         left: 0;
         width: 100%;
         height: 4rem;
+        line-height: 4rem;
         transform: translateY(-100%);
         transition: transform 0.4s;
+      }
+      .scroll-header h1 {
+        margin: 0;
       }
       .scroll-header.show {
         transform: translateY(0);
