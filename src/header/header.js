@@ -55,6 +55,7 @@ export default class Header extends LitElement {
         width: 100%;
         height: 4rem;
         line-height: 4rem;
+        padding-left: 1rem;
         transform: translateY(-100%);
         transition: transform 0.4s;
       }
