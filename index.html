@@ -30,6 +30,20 @@
       html, body {margin: 0}
       footer {background-color: #333; color: white; padding: 1rem}
       bc-block {padding: 1rem; box-sizing: border-box; font-size: 1.25rem; text-align: justify}
+      .author-img {
+        width: 100%;
+        position: relative;
+      }
+      .author-img::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(transparent, #222);
+        z-index: 1;
+      }
     </style>
   </head>
   <body>
@@ -103,9 +117,11 @@
             In some ways, I think that part of what I'm trying to accomplish - whether Amá really understands it or not - is to live for her, Apá, and Olga. It's  not that I'm living life <i>for</i> them, exactly, but I have so many choices they've never had, and I feel like I can do so much with what I've been given. What a waste  their journey would be if I just settled for a dull, mediocre life. Maybe one day they'll realize that.
           </bc-blockquote>
         </div>
+        <div class="text-align-centre">
+          <bc-event title="About the Author"><i>I am not Your Perfect Mexican Daughter</i> is the debut novel by Erika Sánchez. She is a novelist and poet. Sánchez is the daughter of undocumented Mexican immigrants. She was born in Cicero, Illinois, and then studied at the University of Illinois, in Chicago, in Madrid, and at the University of New Mexico. She's also known for her poetry collection <i>Lessons on Expulsion</i>.</bc-event>
+        </div>
       </div>
     </main>
-    <div class="anchor" id="author"></div>
     <footer>
       <p>Copyright © 2019 James Madden</p>
       <p>Source code available under the MIT license.</p>
