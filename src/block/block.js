@@ -4,24 +4,27 @@ import { LitElement, html, customElement, property, css } from 'https://unpkg.co
 export default class Block extends LitElement {
 
   @property({ type: Number })
-  width = 50;
+  width;
 
   static get styles () {
     return css`
       :host {
         display: inline-block;
-        position: relative;
+        width: 100%;
+      }
+      :host(:only-child:not([width])) {
+        max-width: 512px;
       }
     `;
   }
 
   render () {
     return html`
-      <style>
+      ${this.width ? html`<style>
         :host {
           width: ${this.width}%;
         }
-      </style>
+      </style>` : ''}
       <slot></slot>
     `;
   }
