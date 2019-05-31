@@ -10,7 +10,7 @@ export default class Blockquote extends LitElement {
     return css`
       :host {
         display: inline-block;
-        max-width: 512px;
+        width: 100%;
       }
       bc-block {
         text-align: left;
@@ -35,6 +35,9 @@ export default class Blockquote extends LitElement {
         display: inline-block;
         padding-left: 1rem;
         padding-bottom: 1rem;
+      }
+      :host(:only-child) {
+        max-width: 512px;
       }
     `;
   }
