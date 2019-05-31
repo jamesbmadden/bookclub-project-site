@@ -20,7 +20,6 @@ export default class Blockquote extends LitElement {
       .decoration {
         color: #555;
         position: absolute;
-        left: 8px;
         font-weight: 900;
         font-size: 8rem;
         z-index: -1;
