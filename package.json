@@ -1,0 +1,23 @@
+{
+  "name": "book_club_project",
+  "version": "1.0.0",
+  "description": "Project for a Book Club in my English Class",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "console.log('no tests enabled')",
+    "build": "babel src -d dist",
+    "travis": "npm run build && rm .gitignore"
+  },
+  "author": "James Madden",
+  "license": "MIT",
+  "dependencies": {
+    "@webcomponents/webcomponentsjs": "^2.2.10",
+    "lit-element": "^2.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-decorators": "^7.4.4"
+  }
+}
